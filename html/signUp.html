@@ -3,8 +3,8 @@
 
 <head>
     <title>Techra | Create an account</title>
-    <link rel="icon" href="/Users/codeislife/Desktop/Web /Techra/assets/paw-svgrepo-com.svg">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="../assets/paw-svgrepo-com.svg">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,17 +15,69 @@
 
 <body>
     <nav>
-        <img src="assets/logo-transparent-png.png">
+        <a href="../index.html"><img src="../assets/logo-transparent-png.png"></a>
         <div class="buttons">
-            <a href="html/logIn.html"><button class="login">Login</button></a>
-            <a href="html/signUp.html"><button class="signUp">Sign up</button></a>
+            <a href="logIn.html"><button class="login">Login</button></a>
         </div>
     </nav>
-
+    <div class="form">
+        <div class="signUpForm">
+            <h2 style="text-align: center; margin-bottom: 0;">Sign Up</h2>
+            <p style="font-size: 15px; width: 80%; text-align: center; font-weight: 300;">Create your account to start
+                managing or participating in school fundraisers. Secure, easy, and organized for every teacher and
+                student.</p>
+            <div class="input" id="first">
+                <label for="fullName">Full Name</label>
+                <input type="text" placeholder="John Doe" name="fullName">
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="text" placeholder="example@example.com" name="email">
+            </div>
+            <div class="input">
+                <label for="p1">Password</label>
+                <div class="passwordContainer">
+                    <input type="password" placeholder="**************" name="p1">
+                    <span class="material-icons">visibility</span>
+                </div>
+            </div>
+            <div class="input">
+                <label for="p2">Confirm Password</label>
+                <div class="passwordContainer">
+                    <input type="password" placeholder="**************" name="p2">
+                    <span class="material-icons">visibility</span>
+                </div>
+            </div>
+            <div class="typeandemail">
+                <div class="type">
+                    <div class="input">
+                        <label for="account">Account Type</label>
+                        <div class="item"><input type="radio" name="account"><p>Principal</p></div>
+                        <div class="item"><input type="radio" name="account"><p>Teacher</p></div>
+                        <div class="item"><input type="radio" name="account"><p>Student</p></div>
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="input">
+                        <label for="email">Work Email</label>
+                        <input type="text" placeholder="example@example.com" name="email">
+                    </div>
+                    <div class="input">
+                        <label for="email">School Name</label>
+                        <input type="text" placeholder="Technology High School" name="email">
+                    </div>
+                </div>
+            </div>
+            <div class="bottomLink">
+            <a href="logIn.html">Login instead</a>
+            </div>
+            <p class="terms">By creating an account you are agreeing to the <a>Terms and Conditions</a> of using the app</p>
+        </div>
+    </div>
     <footer>
         <a href="https://code-is-life.vercel.app">&copy 2025 Code Is Life, All rights reserved</a>
     </footer>
-    <script src="js/index.js"></script>
+    <script src=""></script>
 </body>
 
 </html>
